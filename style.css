@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: myforte_e;
+    src: url(assets/font/roboto/static/RobotoCondensed-ExtraBold.ttf);
+
+}
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.header{
+    background-color: black;
+}
+
+/*///////// NAV ///////// */
+
+.nav_bar{
+    
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.nav_itens{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/*////////////////// */
+/*/////////main///////// */
+
+.section1{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 4%;
+    flex-wrap: wrap;
+    
+}
+/*//*/
+.foto_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    flex: 1;
+   
+}
+
+.foto_perfil > img {
+    
+    width: 50%;
+    height: 100%;
+}
+/*//*/
+.inf_perfil{
+    flex-wrap: wrap;
+    width: 50%;
+    flex: 1;
+}
+.inf1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    width: 100%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+
+
+/*//*/
+.inf_perfil2{
+
+
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+
+.inf2{
+    
+    width: 50%;
+    height: 100%;
+}
+
+.inf2 > img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+.inf2_1{
+    
+    width: 50%;
+    height: 100%;
+}
+
+.inf2_1 > img{
+    
+    width: 100%;
+    height: 100%;
+}
+/*//*/
+/*/////////SECTION2///////*/
+.section2{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.section2_inf1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section2_inf1 > h1{
+    margin-top: 40px;
+}
+.section2_inf2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inf2_afiliacao{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+    width: auto;
+   
+    
+    
+    
+}
+.afilImg{
+    
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    
+    
+}
+.inf2_afiliacao > afil_img > h1{
+    font-size: 20px;
+}
+/*/////////////////////////*/
+
+/*/////////SECTION3///////*/
+.section3{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.confidencial{
+    
+    width: 40%;
+}
+
+.recompensa{
+    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    width: 50%;
+}
+
+.recompensa > div > h1 {
+    border: 2px solid red;
+    display: flex;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.recompensa > div > h3 {
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+/*/////////////////////////*/
+
+/*/////////SECTION4///////*/
+.section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_form{
+    color: red;
+}
