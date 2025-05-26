@@ -1,195 +1,287 @@
-*{
+* {
     padding: 0;
     margin: 0;
 
 }
 
-@font-face {
-    font-family: myforte_e;
-    src: url(assets/font/roboto/static/RobotoCondensed-ExtraBold.ttf);
-
-}
-body{
-    background-color: black;
-    color: rgb(255, 255, 255);
-}
-.header{
-    background-color: black;
-}
-
-/*///////// NAV ///////// */
-
-.nav_bar{
-    
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around ;
-    align-items: center;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-.nav_itens{
-    
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-/*////////////////// */
-/*/////////main///////// */
-
-.section1{
-    
-    display: flex;
-    flex-direction: row;
-    padding: 4%;
-    flex-wrap: wrap;
-    
-}
-/*//*/
-.foto_perfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    flex: 1;
+body {
+    margin: 0;
+      
    
-}
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
 
-.foto_perfil > img {
     
-    width: 50%;
-    height: 100%;
 }
-/*//*/
-.inf_perfil{
-    flex-wrap: wrap;
-    width: 50%;
-    flex: 1;
+.background {
+  
+  background-image: url(assets/Img/background.jpeg) ;
+  background-size: cover;
+  background-position: center;
+  
+  
 }
-.inf1{
+
+.overlay {
+  
+  background-color: rgb(0, 0, 0); 
+}
+/*///////// NAV ///////// */
+header {
+
+    background: #000;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-family: 'UnifrakturCook';
+    font-size: 3rem;
+    color: rgb(173, 131, 52);
+    margin: 0;
+}
+
+header>p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+nav {
+
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: start;
-    width: 100%;
-    height: 50%;
-    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0.5rem;
 }
 
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+}
 
+nav a:hover {
+    color: rgb(173, 131, 52);
+}
 
-/*//*/
-.inf_perfil2{
+/*/////////////////////// */
+/*//////////section ///////////// */
 
+section {
 
-    height: 50%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/*////////////////////////// */
+/*//////////SECTION _PERFIL ///////////// */
+
+.perfil {
+
     display: flex;
     flex-direction: row;
-    justify-content:center ;
+}
+
+.foto_perfil {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin: 2rem;
+    padding: 0;
+
 }
 
-.inf2{
-    
+.img_perfil2 {
     width: 50%;
-    height: 100%;
 }
 
-.inf2 > img{
-    
-    width: 100%;
-    height: 100%;
-}
-
-.inf2_1{
-    
-    width: 50%;
-    height: 100%;
-}
-
-.inf2_1 > img{
-    
-    width: 100%;
-    height: 100%;
-}
-/*//*/
-/*/////////SECTION2///////*/
-.section2{
-    
+/*//part2 do perfil, informação /*/
+article {
     display: flex;
     flex-direction: column;
-    
+    flex: 1;
+    width: 50%;
+
 }
-.section2_inf1{
-    
+
+.inf_perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 0;
+}
+
+/*////////////////////////// */
+
+/*///////////// ARSENAL ///////////// */
+
+
+.arsenal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.arsenal img {
+    width: 100%;
+    border: 2px solid #ffffff;
+
+    transition: transform 0.3s;
+}
+
+
+
+
+/*////////////////////////////// */
+
+/*////////////// section conetion//////////////// */
+
+
+.section3_inf1 {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.section2_inf1 > h1{
+
+.section3_inf1>h1 {
     margin-top: 40px;
 }
-.section2_inf2{
-    
+
+.section3_inf2 {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
-.inf2_afiliacao{
-    
+
+.inf2_afiliacao {
+
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 2%;
     width: auto;
-   
-    
-    
-    
+
+
+
+
 }
-.afilImg{
-    
+
+.afilImg {
+
     display: flex;
     flex-direction: column;
     flex: auto;
-    
-    
+
+
 }
-.inf2_afiliacao > afil_img > h1{
+
+.inf2_afiliacao> afil_img >h1 {
     font-size: 20px;
 }
+
 /*/////////////////////////*/
 
-/*/////////SECTION3///////*/
-.section3{
-    margin-top: 40px;
+/*/////////////form ///////////*/
+.section_form {
+    
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     
+
 }
 
-.confidencial{
-    
-    width: 40%;
+.confidential_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-.recompensa{
-    
+.form_cont {
+  background-color: #000000;
+  border: 2px solid #f00; /* vermelho "confidencial" */
+  padding: 2rem;
+  max-width: 420px;
+  width: 100%;
+  
+  box-shadow: 0 0 10px rgb(39, 39, 39);
+
+}
+
+.title {
+  color: #f00;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.form_cont > label {
+  
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+
+  color: #ffffff;
+}
+
+.form_cont input, textarea {
+
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: 1px solid #f00;
+  padding: 0.75rem;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 4px;
+  font-size: 1rem;
+  
+}
+
+
+
+.button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background: #f00;
+  color: #000;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background: #ff3333;
+}
+
+.recompensa {
+
     display: flex;
     flex-direction: column;
     border: 2px solid red;
     width: 50%;
+    box-shadow: 0 0 10px rgb(39, 39, 39);
 }
 
-.recompensa > div > h1 {
+.recompensa>div>h1 {
     border: 2px solid red;
     display: flex;
     color: red;
@@ -198,7 +290,7 @@ body{
     padding: 10px;
 }
 
-.recompensa > div > h3 {
+.recompensa>div>h3 {
     display: flex;
     color: rgb(255, 255, 255);
     justify-content: start;
@@ -206,16 +298,15 @@ body{
     padding: 10px;
 }
 
+
+
+
 /*/////////////////////////*/
 
-/*/////////SECTION4///////*/
-.section4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo_form{
-    color: red;
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000;
+    font-size: 0.9rem;
+    color: #666;
 }
