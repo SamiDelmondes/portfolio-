@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+}
+/*///////// NAV ///////// */
+header {
+    
+    background: #000;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    font-family: 'UnifrakturCook';
+    font-size: 3rem;
+    color: rgb(173, 131, 52);
+    margin: 0;
+}
+
+header > p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: rgb(173, 131, 52);
+}
+/*/////////////////////// */
+/*//////////section ///////////// */
+
+section {
+ 
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/*////////////////////////// */
+/*//////////SECTION _PERFIL ///////////// */
+
+.perfil {
+   
+    display: flex;
+    flex-direction: row;
+}
+
+.foto_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem ;
+    padding: 0;
+    
+}
+
+.img_perfil2{
+    width: 50%;
+}
+
+/*//part2 do perfil, informação /*/
+article{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 50%;
+    
+}
+
+.inf_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem ;
+    padding: 0;
+}
+
+/*////////////////////////// */
+
+/*///////////// ARSENAL ///////////// */
+
+
+.arsenal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.arsenal img {
+    width: 100%;
+    border: 2px solid #ffffff;
+    
+    transition: transform 0.3s;
+}
+
+
+
+
+/*////////////////////////////// */
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000;
+    font-size: 0.9rem;
+    color: #666;
+}
